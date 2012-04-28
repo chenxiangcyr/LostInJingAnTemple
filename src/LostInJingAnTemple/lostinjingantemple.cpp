@@ -111,7 +111,7 @@ void LostInJingAnTemple::on_actionFindShortestPath_triggered() {
 		}
 	}
 
-	int start = 1;
+	int start = 0;
 	int end = 2;
 	
 	glWidget->pathPoints.push_back(glWidget->points[end]);
@@ -127,7 +127,7 @@ void LostInJingAnTemple::on_actionFindShortestPath_triggered() {
 
 // Export data
 void LostInJingAnTemple::on_actionExportData_triggered() {
-	int start = 1;
+	int start = 0;
 	int end = 2;
 
 	QString message = "Shortest Length: " + QString::number((int)glWidget->weight[start][end]);
